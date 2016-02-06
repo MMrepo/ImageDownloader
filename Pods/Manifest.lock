@@ -1,0 +1,110 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Kingfisher (2.0.1)
+  - MGEvents (1.0.3)
+  - netfox (1.7.2)
+  - Nimble (3.1.0)
+  - OHHTTPStubs (4.7.0):
+    - OHHTTPStubs/Default (= 4.7.0)
+  - OHHTTPStubs/Core (4.7.0)
+  - OHHTTPStubs/Default (4.7.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.0)
+  - OHHTTPStubs/Swift (4.7.0):
+    - OHHTTPStubs/Core
+  - OMGHTTPURLRQ (3.1.1):
+    - OMGHTTPURLRQ/RQ (= 3.1.1)
+  - OMGHTTPURLRQ/FormURLEncode (3.1.1)
+  - OMGHTTPURLRQ/RQ (3.1.1):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (3.1.1)
+  - PromiseKit (3.0.2):
+    - PromiseKit/Foundation (= 3.0.2)
+    - PromiseKit/QuartzCore (= 3.0.2)
+    - PromiseKit/UIKit (= 3.0.2)
+  - PromiseKit/CorePromise (3.0.2)
+  - PromiseKit/Foundation (3.0.2):
+    - OMGHTTPURLRQ (~> 3.1.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (3.0.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (3.0.2):
+    - PromiseKit/CorePromise
+  - Quick (0.9.0)
+  - SGHTTPRequest (1.5.0):
+    - AFNetworking (~> 2.0)
+  - SGImageCache (1.2.0):
+    - MGEvents
+    - SGHTTPRequest
+    - SGImageCache/base (= 1.2.0)
+  - SGImageCache/base (1.2.0):
+    - MGEvents
+    - SGHTTPRequest
+
+DEPENDENCIES:
+  - Kingfisher (from `https://github.com/MMrepo/Kingfisher.git`)
+  - netfox
+  - Nimble
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+  - PromiseKit
+  - Quick
+  - SGImageCache (from `https://github.com/MMRepo/SGImageCache.git`, branch `compatibleVersion`)
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :git: https://github.com/MMrepo/Kingfisher.git
+  SGImageCache:
+    :branch: compatibleVersion
+    :git: https://github.com/MMRepo/SGImageCache.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: 369cfdc5444506d1898130474f9d317d08b5c8ce
+    :git: https://github.com/MMrepo/Kingfisher.git
+  SGImageCache:
+    :commit: deb20e1565658066cbcf7d1f7b61f5870202f21f
+    :git: https://github.com/MMRepo/SGImageCache.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Kingfisher: 3af2020040453f710507819e6aa5f5721da03d9b
+  MGEvents: 739ea3e582a8df05bd1044500c7fb6d8f7aff5c8
+  netfox: ab995a8327995b847a7b7c1d83c574e0d4aacb25
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
+  OMGHTTPURLRQ: 633f98ee745aeda02345935a52eec1784cddb589
+  PromiseKit: ab1a380f7a30cf8cce663a2411e8b3580b10313d
+  Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
+  SGHTTPRequest: 5a17ca1891dc489efa08c1d100c3f423006a4870
+  SGImageCache: 0f5e42661f8d46ac1563891a6605007bdd26dc32
+
+COCOAPODS: 0.39.0

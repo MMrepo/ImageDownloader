@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="znw-N6-iaK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Images Table View Controller-->
+        <scene sceneID="dl3-BF-a7m">
+            <objects>
+                <tableViewController id="znw-N6-iaK" customClass="ImagesTableViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="235" sectionHeaderHeight="28" sectionFooterHeight="28" id="6yw-jA-g25">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="235" id="RHv-8e-TyE" customClass="ImageTableViewCell" customModule="ImageDownloader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="235"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RHv-8e-TyE" id="juk-J2-bRd">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="234.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFB-C4-5Lv">
+                                            <rect key="frame" x="8" y="0.0" width="584" height="234.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="NFB-C4-5Lv" secondAttribute="bottom" id="6NS-lb-rhl"/>
+                                        <constraint firstItem="NFB-C4-5Lv" firstAttribute="top" secondItem="juk-J2-bRd" secondAttribute="top" id="ZUU-if-C4o"/>
+                                        <constraint firstAttribute="trailing" secondItem="NFB-C4-5Lv" secondAttribute="trailing" constant="8" id="dSi-AT-mwc"/>
+                                        <constraint firstItem="NFB-C4-5Lv" firstAttribute="leading" secondItem="juk-J2-bRd" secondAttribute="leading" constant="8" id="yY4-MD-1Rg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="exampleImageView" destination="NFB-C4-5Lv" id="nwx-Fy-UuJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="znw-N6-iaK" id="uIi-xF-h1J"/>
+                            <outlet property="delegate" destination="znw-N6-iaK" id="cUP-wH-A8L"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX2-A1-vWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3564" y="223"/>
+        </scene>
+    </scenes>
+</document>
